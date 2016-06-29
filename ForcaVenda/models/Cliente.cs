@@ -13,6 +13,8 @@ namespace ForcaVenda.models
         [Column(IsPrimaryKey =true, IsDbGenerated =true)]
         int IdCliente;
         string Nome;
+        string Endereco;
+        string Telefone;
         string Email;
         string Foto; // Localização da foto
 
