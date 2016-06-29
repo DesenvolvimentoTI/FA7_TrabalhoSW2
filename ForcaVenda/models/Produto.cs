@@ -11,8 +11,8 @@ namespace ForcaVenda.models
     public class Produto
     {
         [Column(IsPrimaryKey =true, IsDbGenerated =true)]
-        int IdProduto;
-        string Descricao;
-        int QtdEstoque;
+        public int IdProduto { get; set; }
+        public string Descricao { get; set; }
+        public int QtdEstoque { get; set; }
     }
 }

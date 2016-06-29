@@ -67,6 +67,13 @@ namespace ForcaVenda
         // This code will not execute when the application is reactivated
         private void Application_Launching(object sender, LaunchingEventArgs e)
         {
+            // Geração do banco de dados caso não exista
+            using (var bd = new BancoDados(BancoDados.BdConexao))
+
+                if (!bd.DatabaseExists())
+                {
+                    bd.CreateDatabase();
+                }
         }
 
         // Code to execute when the application is activated (brought to foreground)

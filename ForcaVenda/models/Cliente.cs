@@ -11,12 +11,11 @@ namespace ForcaVenda.models
     public class Cliente
     {
         [Column(IsPrimaryKey =true, IsDbGenerated =true)]
-        int IdCliente;
-        string Nome;
-        string Endereco;
-        string Telefone;
-        string Email;
-        string Foto; // Localização da foto
-
+        public int IdCliente { get; set; }
+        public string Nome { get; set; }
+        public string Endereco { get; set; }
+        public string Telefone { get; set; }
+        public string Email { get; set; }
+        public string Foto { get; set; } // String com a localização do arquivo da foto
     }
 }

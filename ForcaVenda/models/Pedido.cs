@@ -11,9 +11,8 @@ namespace ForcaVenda.models
     public class Pedido
     {
         [Column(IsPrimaryKey =true, IsDbGenerated =true)]
-        int IdPedido;
-        int IdCliente;
-        DateTime DataPedido;
-        string Status;
+        public int IdPedido { get; set; }
+        public int IdCliente { get; set; }
+        public DateTime DataPedido { get; set; }
     }
 }

@@ -22,6 +22,21 @@ namespace ForcaVenda
             //BuildLocalizedApplicationBar();
         }
 
+        private void btCadastro_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/views/Cadastro.xaml", UriKind.Relative));
+        }
+
+        private void btConsulta_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/views/Consulta.xaml", UriKind.Relative));
+        }
+
+        private void btPedido_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/views/Pedido.xaml", UriKind.Relative));
+        }
+
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()
         //{

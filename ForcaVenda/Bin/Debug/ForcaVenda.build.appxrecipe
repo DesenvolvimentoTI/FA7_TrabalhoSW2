@@ -68,6 +68,9 @@
     <AppxPackagedFile Include="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Assets\Tiles\IconicTileSmall.png">
       <PackagePath>Assets\Tiles\IconicTileSmall.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\images\logo.png">
+      <PackagePath>images\logo.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>

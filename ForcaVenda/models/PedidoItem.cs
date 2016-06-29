@@ -10,9 +10,10 @@ namespace ForcaVenda.models
     [Table]
     public class PedidoItem
     {
-        int IdPedidoItem;
-        int IdProduto;
-        int QtdPedido;
-        double PrecoUnitario;
+        [Column(IsPrimaryKey = true, IsDbGenerated = true)]
+        public int IdPedidoItem { get; set; }
+        public int IdProduto { get; set; }
+        public int QtdPedido { get; set; }
+        public double PrecoUnitario { get; set; }
     }
 }
