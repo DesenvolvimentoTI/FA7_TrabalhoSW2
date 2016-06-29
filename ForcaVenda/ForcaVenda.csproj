@@ -99,6 +99,9 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="models\Cliente.cs" />
+    <Compile Include="models\Pedido.cs" />
+    <Compile Include="models\PedidoItem.cs" />
+    <Compile Include="models\Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\AppResources.Designer.cs">
       <AutoGen>True</AutoGen>

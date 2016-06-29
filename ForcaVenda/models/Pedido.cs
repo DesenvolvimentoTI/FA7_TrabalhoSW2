@@ -8,13 +8,12 @@ using System.Threading.Tasks;
 namespace ForcaVenda.models
 {
     [Table]
-    public class Cliente
+    public class Pedido
     {
         [Column(IsPrimaryKey =true, IsDbGenerated =true)]
+        int IdPedido;
         int IdCliente;
-        string Nome;
-        string Email;
-        string Foto; // Localização da foto
-
+        DateTime DataPedido;
+        string Status;
     }
 }
