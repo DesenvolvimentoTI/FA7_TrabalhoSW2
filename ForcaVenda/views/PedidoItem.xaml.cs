@@ -10,18 +10,16 @@ using Microsoft.Phone.Shell;
 
 namespace ForcaVenda.views
 {
-    public partial class Pedido : PhoneApplicationPage
+    public partial class PedidoItem : PhoneApplicationPage
     {
-        public Pedido()
+        public PedidoItem()
         {
             InitializeComponent();
         }
 
-        private void btPedido_Click(object sender, RoutedEventArgs e)
+        private void btAdicionaItem_Click(object sender, RoutedEventArgs e)
         {
-            // TODO salvar pedido 
-            // TODO obter número do pedido gerado
-            NavigationService.Navigate(new Uri("/views/PedidoItem.xaml", UriKind.Relative));
+
         }
     }
 }

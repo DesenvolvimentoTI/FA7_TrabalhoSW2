@@ -3,8 +3,11 @@
   <XAPFiles>
     <File>resources.pri</File>
     <File>ForcaVenda.dll</File>
+    <File>Assets\add.png</File>
     <File>Assets\AlignmentGrid.png</File>
     <File>Assets\BadgeLogo.png</File>
+    <File>Assets\delete.png</File>
+    <File>Assets\edit.png</File>
     <File>Assets\Logo.png</File>
     <File>Assets\SplashScreen.png</File>
     <File>Assets\SquareTile150x150.png</File>

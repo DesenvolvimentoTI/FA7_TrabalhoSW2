@@ -22,8 +22,8 @@
             Margin="60"
             FontSize="42"/>
 
-        <Button Name="btClientes" Content="CLIENTES" Padding="20" Margin="10"/>
-        <Button Name="btProdutos" Content="PRODUTOS" Padding="20" Margin="10"/>
+        <Button Name="btClientes" Content="CLIENTES" Click="btClientes_Click" Padding="20" Margin="10"/>
+        <Button Name="btProdutos" Content="PRODUTOS" Click="btProdutos_Click" Padding="20" Margin="10"/>
     </StackPanel>
 
 </phone:PhoneApplicationPage>

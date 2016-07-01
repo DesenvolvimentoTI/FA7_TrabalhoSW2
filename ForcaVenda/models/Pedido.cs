@@ -12,7 +12,11 @@ namespace ForcaVenda.models
     {
         [Column(IsPrimaryKey =true, IsDbGenerated =true)]
         public int IdPedido { get; set; }
+
+        [Column]
         public int IdCliente { get; set; }
+
+        [Column]
         public DateTime DataPedido { get; set; }
     }
 }

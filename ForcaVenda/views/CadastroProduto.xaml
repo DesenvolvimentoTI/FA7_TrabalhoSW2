@@ -1,0 +1,57 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="ForcaVenda.views.CadastroProduto"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <StackPanel Orientation="Vertical">
+        <TextBlock 
+            Text="CADASTRO DE PRODUTO" 
+            TextAlignment="Center"
+            Padding="20"
+            Margin="10"
+            FontSize="38"/>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Descrição:" Width="120" VerticalAlignment="Center"/>
+            <TextBox Name="txtDescricao" Padding="5" Margin="1" Width="350"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Qtd Estoque:" Width="120" VerticalAlignment="Center"/>
+            <TextBox Name="txtQtdEstoque" Padding="5" Margin="1" Width="350"  InputScope="Number"/>
+        </StackPanel>
+
+        <StackPanel Height="360">
+            <ListBox Name="listaProdutos" Grid.Row="1" Height="500"
+                     ScrollViewer.VerticalScrollBarVisibility="Visible">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" Background="Gray" VerticalAlignment="Center" Margin="5">
+                            <TextBlock Name="txtListDescricao" VerticalAlignment="Center" Padding="10"
+                                   FontSize="30" 
+                                   Foreground="White"
+                                   Width="350"
+                                   Text="{Binding Descricao}"/>
+                            <Image Name="btExcluir" Source="/Assets/delete.png" Tap="btExcluir_Tap"></Image>
+                            <Image Name="btEdit" Source="/Assets/edit.png" Tap="btEdit_Tap"></Image>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>            
+        </StackPanel>
+
+        <Button Name="btAdicionaProduto" Content="ADICIONAR PRODUTO" Click="btAdicionaProduto_Click" Padding="20" Margin="10"/>
+    </StackPanel>
+
+</phone:PhoneApplicationPage>

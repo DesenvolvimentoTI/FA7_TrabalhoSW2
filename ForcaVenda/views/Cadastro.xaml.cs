@@ -16,5 +16,15 @@ namespace ForcaVenda.views
         {
             InitializeComponent();
         }
+
+        private void btProdutos_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/views/CadastroProduto.xaml", UriKind.Relative));
+        }
+
+        private void btClientes_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/views/CadastroCliente.xaml", UriKind.Relative));
+        }
     }
 }

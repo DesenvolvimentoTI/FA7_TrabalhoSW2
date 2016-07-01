@@ -21,6 +21,9 @@
     <AppxPackagedFile Include="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\ForcaVenda.dll">
       <PackagePath>ForcaVenda.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Assets\add.png">
+      <PackagePath>Assets\add.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Assets\AlignmentGrid.png">
       <PackagePath>Assets\AlignmentGrid.png</PackagePath>
     </AppxPackagedFile>
@@ -29,6 +32,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Assets\BadgeLogo.png">
       <PackagePath>Assets\BadgeLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Assets\delete.png">
+      <PackagePath>Assets\delete.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Assets\edit.png">
+      <PackagePath>Assets\edit.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>

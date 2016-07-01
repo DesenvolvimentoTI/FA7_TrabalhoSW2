@@ -22,14 +22,21 @@
             Margin="10"
             FontSize="42"/>
 
-        <TextBox Name="txtData" Padding="20" Margin="10" Text="Data"/>
-        <TextBox Name="txtCliente" Padding="20" Margin="10" Text="Cliente"/>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Data:" Width="100" VerticalAlignment="Center"/>
+            <TextBox Name="txtData" Padding="5" Margin="1" Width="350"/>
+        </StackPanel>
 
-        <StackPanel Height="250">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Cliente:" Width="100" VerticalAlignment="Center"/>
+            <TextBox Name="txtCliente" Padding="5" Margin="1" Width="350"  InputScope="Number"/>
+        </StackPanel>
+
+        <StackPanel Height="360">
             <maps:Map MaxHeight="250" Margin="5" />
         </StackPanel>
 
-        <Button Name="btPedido" Content="ITENS" Padding="20" Margin="10"/>
+        <Button Name="btPedido" Content="ITENS" Click="btPedido_Click" Padding="20" Margin="10"/>
     </StackPanel>
 
 

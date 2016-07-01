@@ -12,8 +12,14 @@ namespace ForcaVenda.models
     {
         [Column(IsPrimaryKey = true, IsDbGenerated = true)]
         public int IdPedidoItem { get; set; }
+
+        [Column]
         public int IdProduto { get; set; }
+
+        [Column]
         public int QtdPedido { get; set; }
+
+        [Column]
         public double PrecoUnitario { get; set; }
     }
 }
