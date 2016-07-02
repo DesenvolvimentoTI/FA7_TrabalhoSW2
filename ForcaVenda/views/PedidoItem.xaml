@@ -6,6 +6,7 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
@@ -34,11 +35,17 @@
 
         <StackPanel Orientation="Horizontal">
             <TextBlock Text="Produto:" Width="120" VerticalAlignment="Center"/>
-            <TextBox x:Name="txtProduto" Padding="2" Width="350"/>
+            <toolkit:ListPicker Name="listaProdutos" VerticalAlignment="Center" Width="320" Tap="listaProdutos_Tap">
+                <toolkit:ListPicker.HeaderTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Descricao}"/>
+                    </DataTemplate>
+                </toolkit:ListPicker.HeaderTemplate>
+            </toolkit:ListPicker>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal">
-            <TextBlock Text="Qtd Estoque:" Width="120" VerticalAlignment="Center"/>
+            <TextBlock Text="Qtd Pedido:" Width="120" VerticalAlignment="Center"/>
             <TextBox x:Name="txtQtdEstoque" Padding="2" Width="350"  InputScope="Number"/>
         </StackPanel>
 
