@@ -23,28 +23,33 @@
             Margin="5"
             FontSize="38"/>
 
-        <TextBlock Text="DATA:" Name="txtData" Width="120" HorizontalAlignment="Left"/>
-        <TextBlock Text="CLIENTE:" Name="txtCliente" Width="120" HorizontalAlignment="Left"/>
-        <TextBlock Text="TOTAL:" Name="txtTotal" Width="120" HorizontalAlignment="Left"/>
+        <TextBlock Text="DATA:" Name="txtData" HorizontalAlignment="Left"/>
+        <TextBlock Text="CLIENTE:" Name="txtCliente" HorizontalAlignment="Left"/>
+        <TextBlock Text="TOTAL:" Name="txtTotal" HorizontalAlignment="Left"/>
 
         <StackPanel Height="340">
-            <ListBox Name="listaPedidos" Grid.Row="1" Height="340"
+            <ListBox Name="listaPedidoItens" Grid.Row="1" Height="340"
                      ScrollViewer.VerticalScrollBarVisibility="Visible">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" Background="Gray" VerticalAlignment="Center" Margin="5">
-                            <TextBlock Name="txtPedido" VerticalAlignment="Center" Padding="10"
+                            <TextBlock VerticalAlignment="Center" Padding="10"
                                    FontSize="30" 
                                    Foreground="White"
                                    Width="300"
-                                   Text="{Binding Pedido}"/>
+                                   Text="{Binding Produto}"/>
 
-                            <TextBlock Name="txtTotal" VerticalAlignment="Center" Padding="10"
+                            <TextBlock VerticalAlignment="Center" Padding="10"
                                    FontSize="30" 
                                    Foreground="White"
                                    Width="100"
-                                   Text="{Binding Total}"/>
-                            <Image Name="btEdit" Source="/Assets/edit.png"></Image>
+                                   Text="{Binding Qtd}"/>
+                            
+                            <TextBlock VerticalAlignment="Center" Padding="10"
+                                   FontSize="30" 
+                                   Foreground="White"
+                                   Width="100"
+                                   Text="{Binding Preco}"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>

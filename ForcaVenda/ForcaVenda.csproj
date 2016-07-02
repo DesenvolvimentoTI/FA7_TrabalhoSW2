@@ -94,6 +94,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="models\ConsultaItens.cs" />
     <Compile Include="views\ConsultaPedido.xaml.cs">
       <DependentUpon>ConsultaPedido.xaml</DependentUpon>
     </Compile>

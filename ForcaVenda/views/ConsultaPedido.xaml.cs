@@ -25,8 +25,8 @@ namespace ForcaVenda
             {
                 if (txtPedido.Text.Equals(""))
                 {
-                    var dataI = DateTime.Parse(txtDataI.Text);
-                    var dataF = DateTime.Parse(txtDataF.Text);
+                    var dataI = DateTime.ParseExact(txtDataI.Text, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
+                    var dataF = DateTime.ParseExact(txtDataF.Text, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
 
                     var pedidos = (from p in bd.TbPedido
                                    where p.DataPedido >= dataI && p.DataPedido <= dataF
@@ -51,7 +51,7 @@ namespace ForcaVenda
                 }
                 else
                 {
-                    NavigationService.Navigate(new Uri(string.Format( "/views/ConsultaPedidoItem.xaml?pedido={0}", int.Parse(txtPedido.Text)), UriKind.Relative));
+                    NavigationService.Navigate(new Uri(string.Format( "/views/ConsultaPedidoItem.xaml?pedido={0}", txtPedido.Text), UriKind.Relative));
                 }
 
 

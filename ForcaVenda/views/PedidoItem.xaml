@@ -61,27 +61,26 @@
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" Background="Gray" VerticalAlignment="Center" Margin="5">
                             <TextBlock x:Name="txtListDescricao" VerticalAlignment="Center" Padding="10"
-    							FontSize="10" 
+    							FontSize="20" 
     							Foreground="White"
     							Width="200"
     							Text="{Binding Produto}"/>
                             <TextBlock x:Name="txtListQtd" VerticalAlignment="Center" Padding="10"
-    							FontSize="10" 
+    							FontSize="20" 
     							Foreground="White"
     							Width="50"
     							Text="{Binding Qtd}"/>
                             <TextBlock x:Name="txtListPreco" VerticalAlignment="Center" Padding="10"
-    							FontSize="10" 
+    							FontSize="20" 
     							Foreground="White"
     							Width="50"
     							Text="{Binding Preco}"/>
                             <TextBlock x:Name="txtListTotal" VerticalAlignment="Center" Padding="10"
-    							FontSize="10" 
+    							FontSize="20" 
     							Foreground="White"
     							Width="50"
     							Text="{Binding Total}"/>
-                            <Image x:Name="btExcluir" Source="/Assets/delete.png"/>
-                            <Image x:Name="btEdit" Source="/Assets/edit.png"/>
+                            <Image x:Name="btExcluir" Source="/Assets/delete.png" Tap="btExcluir_Tap"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
