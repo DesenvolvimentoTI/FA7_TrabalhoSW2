@@ -49,8 +49,8 @@ namespace ForcaVenda.views
                 listaPedidoItens.ItemsSource = lista;
                 var total = lista.Sum(t => t.Qtd * t.Preco);
                 txtTotal.Text = string.Format("TOTAL: R${0}", total);
-                txtData.Text = string.Format("Data do Pedido: {0}",  lista[0].Data.ToString());
-                txtCliente.Text = string.Format("Cliente: {0}", lista[0].Cliente.ToString());
+                txtData.Text = string.Format("Data do Pedido: {0}",  lista[0].Data);
+                txtCliente.Text = string.Format("Cliente: {0}", lista[0].Cliente);
 
                 
             }

@@ -1,6 +1,6 @@
-﻿<xapCache source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\ForcaVenda_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="02/07/2016 16:10:55">
-  <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="02/07/2016 15:44:33" />
-  <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\ForcaVenda.dll" archivePath="ForcaVenda.dll" lastWriteTime="02/07/2016 16:10:54" />
+﻿<xapCache source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\ForcaVenda_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="02/07/2016 16:31:11">
+  <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="02/07/2016 16:20:04" />
+  <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\ForcaVenda.dll" archivePath="ForcaVenda.dll" lastWriteTime="02/07/2016 16:31:09" />
   <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Assets\add.png" archivePath="Assets\add.png" lastWriteTime="30/06/2016 08:22:14" />
   <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="18/06/2016 10:36:28" />
   <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="18/06/2016 10:36:28" />
@@ -24,7 +24,7 @@
   <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="01/07/2016 12:15:18" />
   <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="01/07/2016 12:15:18" />
   <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="01/07/2016 12:15:18" />
-  <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="02/07/2016 09:43:33" />
+  <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="02/07/2016 16:13:31" />
   <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="18/06/2016 10:36:28" />
   <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="18/06/2016 10:36:28" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.dll" archivePath="Microsoft.Advertising.Mobile.dll" lastWriteTime="16/09/2013 11:09:00" />
@@ -34,7 +34,7 @@
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.1\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="06/02/2015 04:37:50" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.1\Libraries\Microsoft.Phone.Controls.Maps.dll" archivePath="Microsoft.Phone.Controls.Maps.dll" lastWriteTime="06/02/2015 04:37:50" />
   <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="15/08/2013 13:04:48" />
-  <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="02/07/2016 09:43:33" />
-  <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="02/07/2016 16:10:55" />
-  <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="02/07/2016 15:44:33" />
+  <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="02/07/2016 16:13:31" />
+  <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="02/07/2016 16:31:11" />
+  <file source="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="02/07/2016 16:20:04" />
 </xapCache>

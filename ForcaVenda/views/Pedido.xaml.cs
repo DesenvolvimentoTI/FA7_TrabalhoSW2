@@ -13,6 +13,7 @@ using Windows.Devices.Geolocation;
 using Microsoft.Phone.Maps.Controls;
 using System.Windows.Media.Imaging;
 using System.Device.Location;
+using Windows.ApplicationModel.Chat;
 
 namespace ForcaVenda.views
 {
@@ -29,7 +30,8 @@ namespace ForcaVenda.views
 
             using(var bd = new BancoDados())
             {
-                novoPedido = bd.TbPedido.Max(p => p.IdPedido) + 1;
+                var ultimoapedido = bd.TbPedido.Count() > 0? bd.TbPedido.Max(p => p.IdPedido): 0;
+                novoPedido = ultimoapedido + 1;
                 txtPedido.Text = string.Format("PEDIDO Nº {0}", novoPedido);
             }
 
@@ -68,6 +70,7 @@ namespace ForcaVenda.views
             {
 
                 models.Pedido pedido = new models.Pedido();
+                pedido.IdPedido = novoPedido;
                 pedido.DataPedido = Convert.ToDateTime(txtData.Text);
                 pedido.IdCliente = ((Cliente)listaClientes.SelectedItem).IdCliente;
                 pedido.Latitude = localPedido.Center.Latitude;
@@ -77,7 +80,7 @@ namespace ForcaVenda.views
                 bd.SubmitChanges();
 
             }
-
+            
             NavigationService.Navigate(new Uri(string.Format("/views/PedidoItem.xaml?pedido={0}", novoPedido), UriKind.Relative));
         }
 
@@ -113,9 +116,12 @@ namespace ForcaVenda.views
 
         }
 
-        private void btFinalizaPedido_Click(object sender, RoutedEventArgs e)
+        private async void btFinalizaPedido_Click(object sender, RoutedEventArgs e)
         {
-
+            ChatMessage sms = new ChatMessage();
+            sms.Body = String.Format("Pedido {0} concluído com sucesso", novoPedido);
+            sms.Recipients.Add(((Cliente)listaClientes.SelectedItem).Telefone);
+            await ChatMessageManager.ShowComposeSmsMessageAsync(sms);
         }
     }
 }

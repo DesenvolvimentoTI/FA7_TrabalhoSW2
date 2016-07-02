@@ -97,6 +97,9 @@ C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\obj\Debug\Multi
 C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\obj\Debug\ProjectArchitectures.txt
 C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\obj\Debug\MDILProjectFiles.xml
 C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\obj\Debug\XapCacheFile.xml
+C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\obj\Debug\views\ConsultaPedido.g.cs
+C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\obj\Debug\views\ConsultaPedidoItem.g.cs
+C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\obj\Debug\views\HistoricoCliente.g.cs
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\Assets\ApplicationIcon.png
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
@@ -167,14 +170,16 @@ D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\uz-Latn-UZ\Microsoft
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Bin\Debug\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
-D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\ForcaVenda.csprojResolveAssemblyReference.cache
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\App.g.cs
+D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\views\ConsultaPedido.g.cs
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\MainPage.g.cs
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\views\Cadastro.g.cs
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\views\CadastroCliente.g.cs
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\views\CadastroProduto.g.cs
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\views\Consulta.g.cs
+D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\views\ConsultaPedidoItem.g.cs
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\views\EstoqueEmBaixa.g.cs
+D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\views\HistoricoCliente.g.cs
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\views\Pedido.g.cs
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\views\PedidoItem.g.cs
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\ForcaVenda.g.resources
@@ -196,6 +201,3 @@ D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\MultipleQualifiersPe
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\ProjectArchitectures.txt
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\MDILProjectFiles.xml
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\XapCacheFile.xml
-D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\views\HistoricoCliente.g.cs
-D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\views\ConsultaPedido.g.cs
-D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\views\ConsultaPedidoItem.g.cs

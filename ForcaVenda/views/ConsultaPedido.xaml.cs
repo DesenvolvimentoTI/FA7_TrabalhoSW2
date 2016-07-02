@@ -21,37 +21,55 @@ namespace ForcaVenda
 
         private void btConsulta_Click(object sender, RoutedEventArgs e)
         {
+
+
             using (var bd = new BancoDados())
             {
                 if (txtPedido.Text.Equals(""))
                 {
-                    var dataI = DateTime.ParseExact(txtDataI.Text, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
-                    var dataF = DateTime.ParseExact(txtDataF.Text, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
+                    if (!txtDataI.Text.Equals("") && !txtDataF.Text.Equals(""))
+                    {
+                        var dataI = DateTime.ParseExact(txtDataI.Text, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
+                        var dataF = DateTime.ParseExact(txtDataF.Text, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
 
-                    var pedidos = (from p in bd.TbPedido
-                                   where p.DataPedido >= dataI && p.DataPedido <= dataF
-                                   orderby p.IdPedido
-                                   select p);
-                        
-/*
-                    var pedidos2 = (from p in bd.TbPedido
-                                   join i in bd.TbPedidoItem on p.IdPedido equals i.idPedido
-                                   where p.DataPedido >= dataI && p.DataPedido <= dataF
-                                   orderby p.IdPedido
-                                   select new
-                                   {
-                                       pPedido = i.idPedido,
-                                       pTotal = i.QtdPedido * i.PrecoUnitario
-                                   })
-                       .GroupBy(g => g.pPedido).Select(g => new { Pedido = g.Key, Total = g.Sum(a => a.pTotal) })
-                       .ToList();
-*/
-                    listaPedidos.ItemsSource = pedidos;
+                        var pedidos = (from p in bd.TbPedido
+                                       where p.DataPedido >= dataI && p.DataPedido <= dataF
+                                       orderby p.IdPedido
+                                       select p);
 
+                        /*
+                                            var pedidos2 = (from p in bd.TbPedido
+                                                           join i in bd.TbPedidoItem on p.IdPedido equals i.idPedido
+                                                           where p.DataPedido >= dataI && p.DataPedido <= dataF
+                                                           orderby p.IdPedido
+                                                           select new
+                                                           {
+                                                               pPedido = i.idPedido,
+                                                               pTotal = i.QtdPedido * i.PrecoUnitario
+                                                           })
+                                               .GroupBy(g => g.pPedido).Select(g => new { Pedido = g.Key, Total = g.Sum(a => a.pTotal) })
+                                               .ToList();
+                        */
+                        listaPedidos.ItemsSource = pedidos;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Informe algum campo para pesquisa!");
+                    }
                 }
                 else
                 {
-                    NavigationService.Navigate(new Uri(string.Format( "/views/ConsultaPedidoItem.xaml?pedido={0}", txtPedido.Text), UriKind.Relative));
+                    var existePedido = bd.TbPedido.SingleOrDefault(p => p.IdPedido == int.Parse(txtPedido.Text));
+                    if (existePedido != null)
+                    {
+                        NavigationService.Navigate(new Uri(string.Format("/views/ConsultaPedidoItem.xaml?pedido={0}", txtPedido.Text), UriKind.Relative));
+                    }
+                    else
+                    {
+                        MessageBox.Show("Pedido não encontrado!");
+                    }
+
+
                 }
 
 
