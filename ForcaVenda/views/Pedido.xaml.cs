@@ -13,17 +13,29 @@ using Windows.Devices.Geolocation;
 using Microsoft.Phone.Maps.Controls;
 using System.Windows.Media.Imaging;
 using System.Device.Location;
+using Windows.ApplicationModel.Chat;
 
 namespace ForcaVenda.views
 {
     public partial class Pedido : PhoneApplicationPage
     {
 
+        private int novoPedido;
+
         public Pedido()
         {
             InitializeComponent();
             CarregarClientes();
             CarregaMapa();
+
+            using(var bd = new BancoDados())
+            {
+                var ultimoapedido = bd.TbPedido.Count() > 0? bd.TbPedido.Max(p => p.IdPedido): 0;
+                novoPedido = ultimoapedido + 1;
+                txtPedido.Text = string.Format("PEDIDO Nº {0}", novoPedido);
+            }
+
+
         }
 
         void CarregarClientes()
@@ -47,45 +59,34 @@ namespace ForcaVenda.views
             }
         }
 
-        private async void btPedido_Click(object sender, RoutedEventArgs e)
+        private void btPedido_Click(object sender, RoutedEventArgs e)
         {
 
             /* Verificar situação do pedido 
              * se novo ou existente
             */
 
-            int novoPedido;
-            
-
             using (var bd = new BancoDados())
             {
 
                 models.Pedido pedido = new models.Pedido();
+                pedido.IdPedido = novoPedido;
                 pedido.DataPedido = Convert.ToDateTime(txtData.Text);
                 pedido.IdCliente = ((Cliente)listaClientes.SelectedItem).IdCliente;
-
-               
-                    pedido.Latitude = localPedido.Center.Latitude;
-                    pedido.Longitude = localPedido.Center.Longitude;
-                
+                pedido.Latitude = localPedido.Center.Latitude;
+                pedido.Longitude = localPedido.Center.Longitude;
 
                 bd.TbPedido.InsertOnSubmit(pedido);
                 bd.SubmitChanges();
 
-                novoPedido = bd.TbPedido.Max(p => p.IdPedido);
-
             }
-
+            
             NavigationService.Navigate(new Uri(string.Format("/views/PedidoItem.xaml?pedido={0}", novoPedido), UriKind.Relative));
         }
 
         public async void CarregaMapa()
         {
             Geolocator geo = new Geolocator();
-
-
-
-
 
             if (geo.LocationStatus != PositionStatus.Disabled)
             {
@@ -115,5 +116,12 @@ namespace ForcaVenda.views
 
         }
 
+        private async void btFinalizaPedido_Click(object sender, RoutedEventArgs e)
+        {
+            ChatMessage sms = new ChatMessage();
+            sms.Body = String.Format("Pedido {0} concluído com sucesso", novoPedido);
+            sms.Recipients.Add(((Cliente)listaClientes.SelectedItem).Telefone);
+            await ChatMessageManager.ShowComposeSmsMessageAsync(sms);
+        }
     }
 }

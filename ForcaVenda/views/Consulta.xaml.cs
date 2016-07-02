@@ -21,5 +21,15 @@ namespace ForcaVenda.views
         {
             NavigationService.Navigate(new Uri("/views/EstoqueEmBaixa.xaml", UriKind.Relative));
         }
+
+        private void btHistorico_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/views/HistoricoCliente.xaml", UriKind.Relative));
+        }
+
+        private void btPedido_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/views/ConsultaPedido.xaml", UriKind.Relative));
+        }
     }
 }

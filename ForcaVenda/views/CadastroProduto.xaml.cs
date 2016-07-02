@@ -37,6 +37,7 @@ namespace ForcaVenda.views
                 idProduto = 0;
                 txtDescricao.Text = "";
                 txtQtdEstoque.Text = "";
+                txtPreco.Text = "";
 
 
             }
@@ -44,7 +45,7 @@ namespace ForcaVenda.views
 
         private void btAdicionaProduto_Click(object sender, RoutedEventArgs e)
         {
-            if (txtDescricao.Text.Equals("") || txtQtdEstoque.Text.Equals(""))
+            if (txtDescricao.Text.Equals("") || txtQtdEstoque.Text.Equals("") || txtPreco.Text.Equals(""))
             {
                 MessageBox.Show("Preencha todos os campos");
             }
@@ -60,6 +61,7 @@ namespace ForcaVenda.views
                         produto = bd.TbProduto.Single(u => u.IdProduto == idProduto);
                         produto.Descricao = txtDescricao.Text;
                         produto.QtdEstoque = Convert.ToInt32(txtQtdEstoque.Text);
+                        produto.Preco = Convert.ToInt32(txtPreco.Text);
                         bd.SubmitChanges();
                         MessageBox.Show("Produto Alterado!");
                     }
@@ -68,6 +70,7 @@ namespace ForcaVenda.views
                         // Novo produto
                         produto.Descricao = txtDescricao.Text;
                         produto.QtdEstoque = Convert.ToInt32(txtQtdEstoque.Text);
+                        produto.Preco = Convert.ToInt32(txtPreco.Text);
                         bd.TbProduto.InsertOnSubmit(produto);
                         bd.SubmitChanges();
                         MessageBox.Show("Produto Adicionado!");
@@ -106,6 +109,7 @@ namespace ForcaVenda.views
             idProduto = produtoSelecionado.IdProduto;
             txtDescricao.Text = produtoSelecionado.Descricao;
             txtQtdEstoque.Text = produtoSelecionado.QtdEstoque.ToString();
+            txtPreco.Text = produtoSelecionado.Preco.ToString();
         }
     }
 }

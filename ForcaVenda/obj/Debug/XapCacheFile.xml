@@ -1,6 +1,6 @@
-﻿<xapCache source="C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\Bin\Debug\ForcaVenda_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="02/07/2016 14:19:34">
-  <file source="C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="02/07/2016 09:57:56" />
-  <file source="C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\obj\Debug\ForcaVenda.dll" archivePath="ForcaVenda.dll" lastWriteTime="02/07/2016 14:19:32" />
+﻿<xapCache source="C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\Bin\Debug\ForcaVenda_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="02/07/2016 15:10:29">
+  <file source="C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="02/07/2016 14:46:06" />
+  <file source="C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\obj\Debug\ForcaVenda.dll" archivePath="ForcaVenda.dll" lastWriteTime="02/07/2016 15:10:27" />
   <file source="C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\Assets\add.png" archivePath="Assets\add.png" lastWriteTime="02/07/2016 09:00:07" />
   <file source="C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="02/07/2016 09:00:07" />
   <file source="C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="02/07/2016 09:00:07" />
@@ -41,6 +41,6 @@
   <file source="C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="02/07/2016 09:00:07" />
   <file source="C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="02/07/2016 09:00:07" />
   <file source="C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="02/07/2016 11:11:20" />
-  <file source="C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="02/07/2016 14:19:34" />
-  <file source="C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="02/07/2016 09:57:57" />
+  <file source="C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="02/07/2016 15:10:29" />
+  <file source="C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="02/07/2016 14:46:07" />
 </xapCache>

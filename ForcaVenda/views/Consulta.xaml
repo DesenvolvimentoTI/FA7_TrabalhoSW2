@@ -22,9 +22,9 @@
             Margin="60"
             FontSize="42"/>
 
-        <Button Name="btHistorico" Content="HISTÓRICO" Padding="20" Margin="10"/>
+        <Button Name="btHistorico" Content="HISTÓRICO" Click="btHistorico_Click" Padding="20" Margin="10"/>
         <Button Name="btEstoque" Content="ESTOQUE" Click="btEstoque_Click" Padding="20" Margin="10"/>
-        <Button Name="btPedido" Content="PEDIDO DE VENDA" Padding="20" Margin="10"/>
+        <Button Name="btPedido" Content="PEDIDO DE VENDA" Click="btPedido_Click" Padding="20" Margin="10"/>
     </StackPanel>
 
 

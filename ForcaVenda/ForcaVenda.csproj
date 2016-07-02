@@ -94,6 +94,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="views\ConsultaPedido.xaml.cs">
+      <DependentUpon>ConsultaPedido.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -121,8 +124,14 @@
     <Compile Include="views\Consulta.xaml.cs">
       <DependentUpon>Consulta.xaml</DependentUpon>
     </Compile>
+    <Compile Include="views\ConsultaPedidoItem.xaml.cs">
+      <DependentUpon>ConsultaPedidoItem.xaml</DependentUpon>
+    </Compile>
     <Compile Include="views\EstoqueEmBaixa.xaml.cs">
       <DependentUpon>EstoqueEmBaixa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\HistoricoCliente.xaml.cs">
+      <DependentUpon>HistoricoCliente.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\Pedido.xaml.cs">
       <DependentUpon>Pedido.xaml</DependentUpon>
@@ -136,6 +145,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="views\ConsultaPedido.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -156,7 +169,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="views\ConsultaPedidoItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="views\EstoqueEmBaixa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\HistoricoCliente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
