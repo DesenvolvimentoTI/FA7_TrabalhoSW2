@@ -25,7 +25,7 @@
 
         <StackPanel Orientation="Horizontal">
             <TextBlock Text="Data:" Width="100" VerticalAlignment="Center"/>
-            <TextBox Name="txtData" Padding="5" Margin="1" Width="350"/>
+            <TextBox Name="txtData" Padding="5" Margin="1" Width="350" IsReadOnly="True"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal">
@@ -42,8 +42,8 @@
         </StackPanel>
 
 
-        <StackPanel Height="360">
-            <maps:Map Name="localPedido" MaxHeight="250" Margin="5" />
+        <StackPanel >
+            <maps:Map Name="localPedido"  Margin="5" Height="360" />
         </StackPanel>
 
         <Button Name="btPedido" Content="ITENS" Click="btPedido_Click" Padding="20" Margin="10"/>

@@ -30,8 +30,13 @@
         <StackPanel Orientation="Horizontal">
             <TextBlock Text="Qtd Estoque:" Width="120" VerticalAlignment="Center"/>
             <TextBox Name="txtQtdEstoque" Padding="5" Margin="1" Width="350"  InputScope="Number"/>
+            
         </StackPanel>
 
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Preco:" Width="120" VerticalAlignment="Center"/>
+            <TextBox Name="txtPreco" Padding="5" Margin="1" Width="350"  InputScope="Number"/>
+        </StackPanel>
         <StackPanel Height="360">
             <ListBox Name="listaProdutos" Grid.Row="1" Height="500"
                      ScrollViewer.VerticalScrollBarVisibility="Visible">

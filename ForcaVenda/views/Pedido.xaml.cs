@@ -24,6 +24,8 @@ namespace ForcaVenda.views
 
         void CarregarClientes()
         {
+            txtData.Text = String.Format("{0:dd/MM/yyyy}",  DateTime.Today) ;
+            geo
             using (var bd = new BancoDados())
             {
                 var clientes = (from cliente in bd.TbCliente

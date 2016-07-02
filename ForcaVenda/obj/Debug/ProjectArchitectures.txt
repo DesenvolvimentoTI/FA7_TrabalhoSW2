@@ -1,1 +1,1 @@
-D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\ForcaVenda.csproj;neutral
+C:\Users\Vianney Ribeiro\Source\Repos\FA7_TrabalhoSW2\ForcaVenda\ForcaVenda.csproj;neutral
