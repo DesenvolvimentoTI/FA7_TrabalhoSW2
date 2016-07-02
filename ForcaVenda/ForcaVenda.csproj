@@ -191,6 +191,7 @@
     <Content Include="Assets\delete.png" />
     <Content Include="Assets\edit.png" />
     <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\pin.png" />
     <Content Include="Assets\SplashScreen.png" />
     <Content Include="Assets\SquareTile150x150.png" />
     <Content Include="Assets\SquareTile71x71.png" />
