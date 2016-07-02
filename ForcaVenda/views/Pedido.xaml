@@ -18,6 +18,7 @@
     <StackPanel Orientation="Vertical">
         <TextBlock 
             Text="PEDIDO Nº" 
+            Name="txtPedido"
             TextAlignment="Center"
             Padding="5"
             Margin="1"
@@ -46,7 +47,8 @@
             <maps:Map Name="localPedido"  Margin="5" Height="360" />
         </StackPanel>
 
-        <Button Name="btPedido" Content="ITENS" Click="btPedido_Click" Padding="20" Margin="10"/>
+        <Button x:Name="btFinalizaPedido" Content="FINALIZA PEDIDO" Click="btFinalizaPedido_Click" Padding="5" Margin="1"/>
+        <Button Name="btPedido" Content="ITENS" Click="btPedido_Click" Padding="5" Margin="1"/>
     </StackPanel>
 
 

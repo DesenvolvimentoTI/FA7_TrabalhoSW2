@@ -211,6 +211,9 @@
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Assets\pin.png">
+      <PackagePath>Assets\pin.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>

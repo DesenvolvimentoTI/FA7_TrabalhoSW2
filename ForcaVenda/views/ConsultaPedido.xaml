@@ -1,0 +1,66 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="ForcaVenda.ConsultaPedido"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <StackPanel Orientation="Vertical">
+        <TextBlock 
+            Text="CONSULTA PEDIDO" 
+            TextAlignment="Center"
+            Padding="20"
+            Margin="10"
+            FontSize="38"/>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Nº PEDIDO:" Width="120" VerticalAlignment="Center"/>
+            <TextBox Name="txtPedido" Padding="5" Margin="1" Width="350" InputScope="Number"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Data Inicio:" Width="120" VerticalAlignment="Center"/>
+            <TextBox Name="txtDataI" Padding="5" Margin="1" Width="350"/>
+
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Data Final:" Width="120" VerticalAlignment="Center"/>
+            <TextBox Name="txtDataF" Padding="5" Margin="1" Width="350"/>
+        </StackPanel>
+        <StackPanel Height="340">
+            <ListBox Name="listaPedidos" Grid.Row="1" Height="340"
+                     ScrollViewer.VerticalScrollBarVisibility="Visible">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" Background="Gray" VerticalAlignment="Center" Margin="5">
+                            <TextBlock Name="txtPedido" VerticalAlignment="Center" Padding="10"
+                                   FontSize="30" 
+                                   Foreground="White"
+                                   Width="300"
+                                   Text="{Binding DataPedido}"/>
+
+                            <TextBlock Name="txtTotal" VerticalAlignment="Center" Padding="10"
+                                   FontSize="30" 
+                                   Foreground="White"
+                                   Width="100"
+                                   Text="{Binding IdPedido}"/>
+                            <Image Name="btEdit" Source="/Assets/edit.png" Tap="btEdit_Tap"></Image>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+
+        <Button Name="btConsulta" Content="CONSULTAR PEDIDO" Click="btConsulta_Click" Padding="5" Margin="1"/>
+    </StackPanel>
+</phone:PhoneApplicationPage>

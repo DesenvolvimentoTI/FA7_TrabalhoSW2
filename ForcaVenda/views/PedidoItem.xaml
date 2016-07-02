@@ -88,7 +88,6 @@
             </ListBox>
         </StackPanel>
 
-        <Button x:Name="btFinalizaPedido" Content="FINALIZA PEDIDO" Click="btAdicionaItem_Click" Padding="10" Margin="5"/>
         <Button x:Name="btAdicionaItem" Content="ADICIONAR ITEM" Click="btAdicionaItem_Click" Padding="10" Margin="5"/>
     </StackPanel>
 

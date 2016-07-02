@@ -196,3 +196,6 @@ D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\MultipleQualifiersPe
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\ProjectArchitectures.txt
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\MDILProjectFiles.xml
 D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\XapCacheFile.xml
+D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\views\HistoricoCliente.g.cs
+D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\views\ConsultaPedido.g.cs
+D:\FA7\SW-II Windows Phone\TrabalhoSW2\ForcaVenda\obj\Debug\views\ConsultaPedidoItem.g.cs
