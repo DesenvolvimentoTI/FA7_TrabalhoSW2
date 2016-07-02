@@ -14,6 +14,9 @@ namespace ForcaVenda.models
         public int IdPedidoItem { get; set; }
 
         [Column]
+        public int idPedido { get; set; }
+
+        [Column]
         public int IdProduto { get; set; }
 
         [Column]

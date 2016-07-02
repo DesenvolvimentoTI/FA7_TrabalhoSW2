@@ -56,13 +56,32 @@ namespace ForcaVenda.views
 
         private void btAdicionaItem_Click(object sender, RoutedEventArgs e)
         {
+            if(txtQtdEstoque.Text.Equals("") || txtPreco.Text.Equals(""))
+            {
+                MessageBox.Show("Informe todos os dados");
+            }else
+            {
+                using (var bd = new BancoDados())
+                {
+                    models.PedidoItem novoItem = new models.PedidoItem();
+                    novoItem.idPedido = idPedido;
+                    novoItem.IdProduto = produto.IdProduto;
+                    novoItem.QtdPedido = Convert.ToInt32(txtQtdEstoque.Text);
+                    novoItem.PrecoUnitario = Convert.ToInt32(txtPreco.Text);
+                    bd.TbPedidoItem.InsertOnSubmit(novoItem);
+                    bd.SubmitChanges();
 
+                    totalPedido += novoItem.QtdPedido * novoItem.PrecoUnitario;
+                    txtTotal.Text = string.Format("TOTAL: R${0}", totalPedido);
+                }
+            }
         }
 
-        private void listaProdutos_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        private void listaProdutos_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             produto = (Produto)listaProdutos.SelectedItem;
-            MessageBox.Show(string.Format( "Produto Selecionado: {0}, preço={1}, Estoque={2}", produto.Descricao, 0, produto.QtdEstoque));
+            txtQtdEstoque.Text = "";
+            txtPreco.Text = produto.Preco.ToString();
         }
     }
 }

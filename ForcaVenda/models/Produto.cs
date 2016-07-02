@@ -18,5 +18,14 @@ namespace ForcaVenda.models
 
         [Column]
         public int QtdEstoque { get; set; }
+
+        [Column]
+        public double Preco { get; set; }
+
+        public override string ToString()
+        {
+            return Descricao;
+        }
+
     }
 }

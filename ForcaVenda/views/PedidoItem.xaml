@@ -35,7 +35,7 @@
 
         <StackPanel Orientation="Horizontal">
             <TextBlock Text="Produto:" Width="120" VerticalAlignment="Center"/>
-            <toolkit:ListPicker Name="listaProdutos" VerticalAlignment="Center" Width="320" Tap="listaProdutos_Tap">
+            <toolkit:ListPicker Name="listaProdutos" VerticalAlignment="Center" Width="320" SelectionChanged="listaProdutos_SelectionChanged">
                 <toolkit:ListPicker.HeaderTemplate>
                     <DataTemplate>
                         <TextBlock Text="{Binding Descricao}"/>
@@ -54,8 +54,8 @@
             <TextBox x:Name="txtPreco" Padding="2" Width="350"  InputScope="Number"/>
         </StackPanel>
 
-        <StackPanel Height="350">
-            <ListBox x:Name="listaItens" Grid.Row="1" Height="350"
+        <StackPanel Height="315">
+            <ListBox x:Name="listaItens" Grid.Row="1" Height="315"
     			ScrollViewer.VerticalScrollBarVisibility="Visible">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
@@ -88,6 +88,7 @@
             </ListBox>
         </StackPanel>
 
+        <Button x:Name="btFinalizaPedido" Content="FINALIZA PEDIDO" Click="btAdicionaItem_Click" Padding="10" Margin="5"/>
         <Button x:Name="btAdicionaItem" Content="ADICIONAR ITEM" Click="btAdicionaItem_Click" Padding="10" Margin="5"/>
     </StackPanel>
 
