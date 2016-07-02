@@ -27,5 +27,11 @@ namespace ForcaVenda.models
 
         [Column]
         public string Foto { get; set; } // String com a localização do arquivo da foto
+
+        public override string ToString()
+        {
+            return Nome;
+        }
+
     }
 }

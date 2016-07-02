@@ -16,6 +16,7 @@ namespace ForcaVenda.views
     {
         private int idCliente;
         private Cliente cliente;
+        private Cliente clienteTela;
         
         public CadastroCliente()
         {

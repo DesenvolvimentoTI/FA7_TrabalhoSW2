@@ -18,5 +18,12 @@ namespace ForcaVenda.models
 
         [Column]
         public DateTime DataPedido { get; set; }
+
+        [Column]
+        public double Longitude { get; set; }
+
+        [Column]
+        public double Latitude { get; set; }
+
     }
 }

@@ -16,5 +16,10 @@ namespace ForcaVenda.views
         {
             InitializeComponent();
         }
+
+        private void btEstoque_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/views/EstoqueEmBaixa.xaml", UriKind.Relative));
+        }
     }
 }

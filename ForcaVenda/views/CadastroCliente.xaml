@@ -30,19 +30,19 @@
 
         <StackPanel Orientation="Horizontal">
             <TextBlock Text="Endereço:" Width="80" VerticalAlignment="Center"/>
-            <TextBox x:Name="txtEndereco" Padding="2" Width="400"  InputScope="Number"/>
+            <TextBox x:Name="txtEndereco" Padding="2" Width="400"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal">
             <StackPanel Orientation="Vertical" Width="320">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Email:" Width="80" VerticalAlignment="Center"/>
-                    <TextBox x:Name="txtEmail" Padding="2" Width="230"  InputScope="Number"/>
+                    <TextBox x:Name="txtEmail" Padding="2" Width="230"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Fone:" Width="80" VerticalAlignment="Center"/>
-                    <TextBox x:Name="txtFone" Padding="2" Width="230"  InputScope="Number"/>
+                    <TextBox x:Name="txtFone" Padding="2" Width="230"/>
                 </StackPanel>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Width="145" Height="127">
