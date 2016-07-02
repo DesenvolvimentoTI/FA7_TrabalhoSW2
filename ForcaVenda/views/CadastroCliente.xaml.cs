@@ -9,6 +9,11 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using ForcaVenda.Resources;
 using ForcaVenda.models;
+using Microsoft.Phone.Tasks;
+using System.Windows.Media.Imaging;
+using System.IO;
+using Microsoft.Xna.Framework.Media;
+using Windows.ApplicationModel.Chat;
 
 namespace ForcaVenda.views
 {
@@ -16,12 +21,14 @@ namespace ForcaVenda.views
     {
         private int idCliente;
         private Cliente cliente;
-        private Cliente clienteTela;
+        private string pathFoto;
         
         public CadastroCliente()
         {
             InitializeComponent();
             CarregarClientes();
+
+            pathFoto = null;
         }
 
         void CarregarClientes()
@@ -43,6 +50,7 @@ namespace ForcaVenda.views
                 txtEmail.Text = "";
                 txtFone.Text = "";
                 imgFoto.Source = null;
+                pathFoto = null;
                 
             }
         }
@@ -62,7 +70,7 @@ namespace ForcaVenda.views
                     clienteUpdate.Endereco = txtEndereco.Text;
                     clienteUpdate.Email = txtEmail.Text;
                     clienteUpdate.Telefone = txtFone.Text;
-                    //clienteUpdate.Foto = imgFoto.Source.ToString();
+                    clienteUpdate.Foto = pathFoto;
 
                     bd.SubmitChanges();
                     MessageBox.Show("Cliente Alterado!");
@@ -74,7 +82,7 @@ namespace ForcaVenda.views
                     cliente.Endereco = txtEndereco.Text;
                     cliente.Email = txtEmail.Text;
                     cliente.Telefone = txtFone.Text;
-                    //cliente.Foto = imgFoto.Source.ToString();
+                    cliente.Foto = pathFoto;
                     bd.TbCliente.InsertOnSubmit(cliente);
                     bd.SubmitChanges();
                     MessageBox.Show("Cliente Adicionado!");
@@ -115,7 +123,50 @@ namespace ForcaVenda.views
             txtEndereco.Text = clienteSelecionado.Endereco;
             txtEmail.Text = clienteSelecionado.Email;
             txtFone.Text = clienteSelecionado.Telefone;
-            //imgFoto.Source = clienteSelecionado.Foto.ToString();
+                pathFoto = clienteSelecionado.Foto;
+
+            //var msrc = MediaSource.GetAvailableMediaSources()[0];
+            var lib = new MediaLibrary();
+            var img = lib.Pictures.Where(i => i.Name.Contains(pathFoto))
+                .FirstOrDefault();
+
+            if (img != null)
+               // img.
+
+            //using (var streamFile = new FileStream(@pathFoto, FileMode.Open, FileAccess.Read))
+            {
+                BitmapImage foto = new BitmapImage();
+                //foto.SetSource(streamFile);
+                foto.SetSource(img.GetImage());
+                imgFoto.Source = foto;
+            }
         }
+
+       
+
+        private void btFoto_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("camera");
+            CameraCaptureTask camera = new CameraCaptureTask();
+            camera.Completed += Camera_Completed;
+            camera.Show();
+        }
+
+        private void Camera_Completed(object sender, PhotoResult e)
+        {
+            if (e.TaskResult == TaskResult.OK)
+            {
+                BitmapImage fotoTirada = new BitmapImage();
+                fotoTirada.SetSource(e.ChosenPhoto);
+                pathFoto = Path.GetFileName(e.OriginalFileName);
+                imgFoto.Source = fotoTirada;
+            }
+           
+        }
+
+       
+         
+        
     }
+    
 }

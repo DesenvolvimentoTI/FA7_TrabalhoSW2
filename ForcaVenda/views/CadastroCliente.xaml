@@ -46,7 +46,7 @@
                 </StackPanel>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Width="145" Height="127">
-                <Image Name="imgFoto"></Image>
+                <Image Name="imgFoto" ></Image>
             </StackPanel>
         </StackPanel>
 
@@ -69,9 +69,12 @@
                 </ListBox.ItemTemplate>
             </ListBox>
         </StackPanel>
-
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="btHistorico" Content="HISTORICO" Padding="5" Width="300"/>
+            <Button x:Name="btFoto" Content="FOTO" Click="btFoto_Click" Width="180"/>
+        </StackPanel>
         <Button x:Name="btAdicionaCliente" Content="ADICIONAR CLIENTE" Click="btAdicionaCliente_Click" Padding="5"/>
-        <Button x:Name="btHistorico" Content="HISTORICO" Padding="5"/>
+        
     </StackPanel>
 
 
